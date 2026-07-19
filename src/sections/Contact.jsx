@@ -3,7 +3,7 @@ import { Mail, MapPin, Github, Linkedin, Twitter, Send } from 'lucide-react'
 
 const CONTACT_INFO = [
   { icon: Mail, label: 'Email', value: 'damilolaoniyide11@gmail.com', href: 'mailto:damilolaoniyide11@gmail.com' },
-  { icon: MapPin, label: 'Location', value: '', href: null },
+  //{ icon: MapPin, label: 'Location', value: '', href: null },
 ]
 
 const SOCIALS = [
