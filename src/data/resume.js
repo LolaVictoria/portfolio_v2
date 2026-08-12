@@ -1,9 +1,9 @@
 export const skills = [
-  { category: 'Languages', details: 'JavaScript, TypeScript, Python, Java' },
+  { category: 'Languages', details: 'JavaScript, TypeScript, Python, Java, C#' },
   { category: 'Frontend', details: 'React, Vue, Next.js, Tailwind CSS' },
-  { category: 'Backend', details: 'Node.js, Express.js, FastAPI, Flask' },
+  { category: 'Backend', details: 'Node.js, Spring Booot, ASP NET Core, Express.js, FastAPI, Flask' },
   { category: 'Storage/Databases', details: 'SQL, PostgreSQL, MongoDB, Redis, Firebase' },
-  { category: 'Tools', details: 'Git, AWS' },
+  // { category: 'Tools', details: 'Git, AWS' },
 ]
 
 export const experiences = [
