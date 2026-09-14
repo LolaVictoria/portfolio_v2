@@ -3,25 +3,20 @@ export const projects = [
     title: 'Alaba Market',
     tag: 'FULL STACK/ e-commerce',
     description:
-      'An e-commerce platform with a seller dashboard for inventory, a full shopping cart flow, and Firebase authentication — optimized for a 20% improvement in page load time through lazy-loaded product images.',
-    stack: 'TypeScript, React, Firebase, CSS3',
+      'An e-Commerce platform with buyer and seller dashboard',
+    stack: 'React, TypeScript, Spring Boot, Spring Security, Java, PostgreSQL, Cloudinary',
     live: 'https://alaba-market.vercel.app',
     code: 'https://github.com/LolaVictoria/E-Commerce-Store',
   },
 
   {
-    title: 'VendorHub API',
-
-    tag: 'backend',
-
+    title: 'LectureMerge',
+    tag: 'full-stack',
     description:
-      'A RESTful backend API for managing vendors and products, with vendor-product relationships, PostgreSQL persistence, centralized exception handling, and Swagger API documentation.',
-
-    stack: 'C#, ASP.NET Core, Entity Framework Core, PostgreSQL, Swagger, xUnit, Moq',
-
-    live: 'https://vendor-hub-api.onrender.com/swagger/index.html',
-
-    code: 'https://github.com/LolaVictoria/Vendor-Hub-Api',
+      'A full-stack application that automatically merges a lecturer&apos;s spoken explanations into the appropriate sections of lecture PDFs',
+    stack: 'FastAPI, React, TypeScript, Whisper, Sentence-Transformers',
+    live: '',
+    code: 'https://github.com/LolaVictoria',
   },
 
    {
@@ -34,15 +29,20 @@ export const projects = [
     code: '',
   },
   
-  {
-    title: 'LectureMerge',
-    tag: 'full-stack',
-    description:
-      'Merges lecture audio transcriptions with PDF notes into one searchable study document, using Whisper for transcription and sentence-transformers with cosine similarity to align spoken content with written notes.',
-    stack: 'FastAPI, React, TypeScript, Whisper, Sentence-Transformers',
-    live: '',
-    code: 'https://github.com/LolaVictoria',
-  },
+  // {
+  //   title: 'VendorHub API',
+
+  //   tag: 'backend',
+
+  //   description:
+  //     'A RESTful backend API for managing vendors and products, with vendor-product relationships, PostgreSQL persistence, centralized exception handling, and Swagger API documentation.',
+
+  //   stack: 'C#, ASP.NET Core, Entity Framework Core, PostgreSQL, Swagger, xUnit, Moq',
+
+  //   live: 'https://vendor-hub-api.onrender.com/swagger/index.html',
+
+  //   code: 'https://github.com/LolaVictoria/Vendor-Hub-Api',
+  // },
   // {
   //   title: 'BlockVerify',
   //   tag: 'blockchain',
