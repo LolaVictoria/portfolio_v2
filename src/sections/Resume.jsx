@@ -13,7 +13,7 @@ const Resume = () => {
           className="inline-flex items-center gap-2 border border-line px-4 py-2.5 rounded-md text-sm font-medium hover:border-ink transition-colors whitespace-nowrap"
         >
           <Download size={16} />
-          Download PDF
+          Download Resume
         </a>
       </div>
 
