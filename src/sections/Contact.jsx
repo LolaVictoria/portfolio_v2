@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Mail, MapPin, Github, Linkedin, Twitter, Send } from 'lucide-react'
 
 const CONTACT_INFO = [
-  { icon: Mail, label: 'Email', value: 'damilolaoniyide11@gmail.com', href: 'mailto:damilolaoniyide11@gmail.com' },
+  { icon: Mail, label: 'Email', value: 'dammyvicky1245@gmail.com', href: 'mailto:dammyvicky1245@gmail.com' },
   //{ icon: MapPin, label: 'Location', value: '', href: null },
 ]
 

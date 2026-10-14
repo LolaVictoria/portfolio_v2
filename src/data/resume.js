@@ -1,8 +1,8 @@
 export const skills = [
-  { category: 'Languages', details: 'Java, Python, TypeScript, JavaScript' },
-  { category: 'Frameworks/Libraries', details: 'Spring Boot, Spring Security, React, Next.js, FastAPI, Express.js, SQLAlchemy' },
-  { category: 'Databases/Storages', details: 'MySQL, PostgreSQL, MongoDB, Firebase, SQLite, Cloudinary' },
-  { category: 'Tools', details: 'Git, GitHub, Postman' },
+  { category: 'Programming Languages', details: 'Java, Python, TypeScript, JavaScript' },
+  { category: 'Frameworks/Libraries', details: 'Spring Boot, React, Next.js, FastAPI, Express.js, SQLAlchemy, Tailwind CSS' },
+  { category: 'Databases/Storage', details: 'MySQL, PostgreSQL, MongoDB, Firebase, SQLite, Cloudinary' },
+  { category: 'Tools', details: 'Git, GitHub, Postman, Docker' },
 ]
 
 export const experiences = [
@@ -12,32 +12,32 @@ export const experiences = [
     location: 'Estonia . Remote',
     duration: '04/2024 – 12/2024',
     responsibilities: [
-      'Developed a learning management system MVP from scratch, implementing course enrollment, progress tracking, and user workflows based on design specifications.',
-      'Worked with the design team on the "Try a Free Class" feature, iterating on UX flows that increased user registrations by 3× and improved paid class conversions by 64%.',
-      'Created API endpoints for the child dashboard, displaying registered courses, attendance logs, and individual progress tracking.',
-      'Integrated Stripe payment gateway for course enrollment, coordinating with backend team on transaction handling and error states.',
-      'Implemented a support page for issue reporting and user feedback in collaboration with the product team, reducing average response time by 75%.'
+      'Developed a learning management system MVP covering course enrollment, progress tracking, and user workflows, used by nearly 100 students.',
+      'Implemented a "Try a Free Class" feature that tripled sign-ups and raised paid class conversions from under 15% to over 55%.',
+      'Built REST API endpoints for the child dashboard, surfacing registered courses, attendance logs, and individual progress tracking.',
+      'Integrated Stripe payments for course enrollment, supporting both full and installment payment options, and used webhooks to confirm payments and update enrollment automatically.',
+      'Implemented a support page in collaboration with the product team, making it easy for users to share feedback and helping the team respond faster and improve the product.'
     ],
     tech: 'React, TypeScript, Express.js, Firebase, Stripe',
   },
   {
-    title: 'Frontend Developer',
+    title: 'Frontend Developer Intern',
     company: 'OAU ICT Centre',
     location: 'On-site',
-    duration: '01/2024 – 05/2024',
+    duration: '01/2024 – 03/2024',
     responsibilities: [
-      'Developed the frontend website for a Clinical Decision Support System supporting concurrent users and real-time session management.',
+      'Developed the frontend of a Clinical Decision Support System used by patients and physicians.',
       'Collaborated with healthcare providers and the product team to gather requirements and iteratively design dashboard workflows.',
       'Implemented role-based authorization for tiered patient-record access and secure login flows.',
-      'Built the clinician dashboard, including patient request approval workflows.',
-      'Developed an interactive pre-diagnosis assessment quiz to reduce the need for in-person consultations through intelligent questionnaire logic.'
+      'Built the clinician dashboard, including approval workflows for patient requests.',
+      'Developed an interactive pre-diagnosis quiz with branching questions that guides patients to the right next step, reducing the need for some in-person consultations.'
     ],
-    tech: 'Next.js, JavaScript, REST APIs',
+    tech: 'JavaScript, Next.js, Tailwind CSS',
   },
 ]
 
 export const education = {
-  degree: 'B.Sc. Computer Science with Mathematics',
+  degree: 'Bachelor of Science (B.Sc.), Computer Science with Mathematics',
   institution: 'Obafemi Awolowo University',
   year: '02/2019 – 12/2025',
   location: 'Ile-Ife, Nigeria',
@@ -47,12 +47,12 @@ export const education = {
     'Object-Oriented Programming',
     'Operating Systems',
     'Software Engineering Techniques',
-    'Principles of Compilers',
+    'Principles of Compiler',
     'Digital Computer Networks',
-    'Object-Oriented Modeling',
+    'Object Oriented Modeling',
     'Database Design and Management',
   ],
 }
 
 export const resumeLink =
-  'https://drive.google.com/file/d/1Irt4Xe4Lb3Kr2u0h1XLicyYFpz-4nAkl/view?usp=drive_link'
+  'https://drive.google.com/file/d/1Freo6k2e8iEu8tjABRkOYWGpwU47lEMu/view?usp=sharing'
