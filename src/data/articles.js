@@ -1,4 +1,16 @@
+
 export const articles = [
+  {
+    slug: 'building-a-reliable-job-alert-system',
+    title: 'How I Built a Reliable Job Alert System: Architecture & Trade-offs',
+    platform: 'Personal Blog',
+    category: 'System Design',
+    date: 'Oct 2026',
+    description:
+      'How I approached job collection, filtering, deduplication, PostgreSQL storage and reliable email notifications.',
+    link: '/articles/building-a-reliable-job-alert-system',
+  },
+
   {
     title: 'Implement a Service Worker with Workbox in a PWA',
     platform: 'freeCodeCamp',
@@ -6,8 +18,8 @@ export const articles = [
       'A comprehensive guide on implementing service workers using Workbox to build progressive web apps with offline capabilities and enhanced performance.',
     date: '2025',
     link: 'https://www.freecodecamp.org/news/implement-a-service-worker-with-workbox-in-a-pwa/',
-    featured: true,
   },
+
   {
     title: 'Performance Optimization Techniques for Front-End Developers',
     platform: 'Medium',
@@ -16,6 +28,7 @@ export const articles = [
     date: '2024',
     link: 'https://medium.com/@damilolaoniyide11/performance-optimization-techniques-for-front-end-developers-ca965cff0543',
   },
+
   {
     title: 'Understanding Functions in JavaScript: The Basics',
     platform: 'Medium',
@@ -24,6 +37,7 @@ export const articles = [
     date: '2024',
     link: 'https://medium.com/@damilolaoniyide11/understanding-functions-in-javascript-the-basics-4d9fb9cb4959',
   },
+
   {
     title: 'Destructuring Arrays and Objects in JavaScript',
     platform: 'Medium',
@@ -32,6 +46,7 @@ export const articles = [
     date: '2023',
     link: 'https://medium.com/@damilolaoniyide11/destructuring-arrays-and-objects-in-javascript-a5421c633c0f',
   },
+
   {
     title: 'Effective Applications of AI in the Learning Process',
     platform: 'Medium',
@@ -40,6 +55,7 @@ export const articles = [
     date: '2023',
     link: 'https://medium.com/@damilolaoniyide11/effective-applications-of-ai-in-the-learning-process-18bcc66f4698',
   },
+
   {
     title: 'Leveraging AI in Your Job',
     platform: 'Medium',
@@ -48,6 +64,7 @@ export const articles = [
     date: '2023',
     link: 'https://medium.com/@damilolaoniyide11/leveraging-ai-in-your-job-76fe6dfd4925',
   },
+
   {
     title: 'Important Meta Tags for Search Engine Optimization',
     platform: 'Medium',

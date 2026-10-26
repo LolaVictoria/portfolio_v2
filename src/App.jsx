@@ -1,4 +1,6 @@
-import { useState } from 'react'
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './sections/Home'
@@ -6,32 +8,32 @@ import Projects from './sections/Projects'
 import Resume from './sections/Resume'
 import Articles from './sections/Articles'
 import Contact from './sections/Contact'
+import JobAlertArticle from './sections/JobAlertArticle'
 
-const App = () => {
-  const [activeSection, setActiveSection] = useState('home')
+const Layout = ({ children }) => (
+  <div className="min-h-screen bg-paper text-ink font-sans flex flex-col">
+    <Navbar />
+    <main className="flex-1">{children}</main>
+    <Footer />
+  </div>
+)
 
-  const renderSection = () => {
-    switch (activeSection) {
-      case 'projects':
-        return <Projects />
-      case 'resume':
-        return <Resume />
-      case 'articles':
-        return <Articles />
-      case 'contact':
-        return <Contact />
-      case 'home':
-      default:
-        return <Home setActiveSection={setActiveSection} />
-    }
-  }
-
+function App() {
   return (
-    <div className="min-h-screen bg-paper text-ink font-sans flex flex-col">
-      <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
-      <main className="flex-1">{renderSection()}</main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/projects" element={<Layout><Projects /></Layout>} />
+        <Route path="/resume" element={<Layout><Resume /></Layout>} />
+        <Route path="/articles" element={<Layout><Articles /></Layout>} />
+        <Route
+          path="/articles/building-a-reliable-job-alert-system"
+          element={<Layout><JobAlertArticle /></Layout>}
+        />
+        <Route path="/contact" element={<Layout><Contact /></Layout>} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

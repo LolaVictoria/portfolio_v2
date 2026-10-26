@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react'
+import { ExternalLink, Github, Link } from 'lucide-react'
 import { projects } from '../data/projects'
 
 const Projects = () => {
@@ -45,6 +45,17 @@ const Projects = () => {
                   >
                     <Github size={14} />
                     Source
+                  </a>
+                )}
+                {project.article && (
+                  <a
+                    href={project.article}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-muted hover:text-ink transition-colors"
+                  >
+                    <Link size={14} />
+                    Read
                   </a>
                 )}
               </div>

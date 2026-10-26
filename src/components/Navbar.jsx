@@ -1,28 +1,41 @@
+
 import { useState } from 'react'
-import PropTypes from 'prop-types'
+import { useNavigate, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 
 const NAV_ITEMS = [
-  { key: 'home', label: 'Home' },
-  { key: 'projects', label: 'Projects' },
-  { key: 'resume', label: 'Resume' },
-  { key: 'articles', label: 'Articles' },
-  { key: 'contact', label: 'Contact' },
+  { key: 'home', label: 'Home', path: '/' },
+  { key: 'projects', label: 'Projects', path: '/projects' },
+  { key: 'resume', label: 'Resume', path: '/resume' },
+  { key: 'articles', label: 'Articles', path: '/articles' },
+  { key: 'contact', label: 'Contact', path: '/contact' },
 ]
 
-const Navbar = ({ activeSection, setActiveSection }) => {
+const Navbar = () => {
   const [open, setOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
-  const go = (key) => {
-    setActiveSection(key)
+  const go = (path) => {
+    navigate(path)
     setOpen(false)
+  }
+
+  const isActive = (item) => {
+    if (item.path === '/') {
+      return location.pathname === '/'
+    }
+
+    return location.pathname === item.path ||
+      (item.path === '/articles' &&
+        location.pathname.startsWith('/articles/'))
   }
 
   return (
     <header className="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-line">
       <div className="max-w-content mx-auto px-6 md:px-0 flex items-center justify-between h-16">
         <button
-          onClick={() => go('home')}
+          onClick={() => go('/')}
           className="font-serif text-lg tracking-tight text-ink"
         >
           Damilola Oniyide
@@ -32,9 +45,10 @@ const Navbar = ({ activeSection, setActiveSection }) => {
           {NAV_ITEMS.map((item) => (
             <button
               key={item.key}
-              onClick={() => go(item.key)}
+              onClick={() => go(item.path)}
+              aria-current={isActive(item) ? 'page' : undefined}
               className={`text-sm transition-colors ${
-                activeSection === item.key
+                isActive(item)
                   ? 'text-ink font-medium'
                   : 'text-muted hover:text-ink'
               }`}
@@ -48,6 +62,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
           className="md:hidden text-ink"
           onClick={() => setOpen(!open)}
           aria-label={open ? 'Close menu' : 'Open menu'}
+          aria-expanded={open}
         >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
@@ -58,9 +73,12 @@ const Navbar = ({ activeSection, setActiveSection }) => {
           {NAV_ITEMS.map((item) => (
             <button
               key={item.key}
-              onClick={() => go(item.key)}
+              onClick={() => go(item.path)}
+              aria-current={isActive(item) ? 'page' : undefined}
               className={`text-left text-base ${
-                activeSection === item.key ? 'text-ink font-medium' : 'text-muted'
+                isActive(item)
+                  ? 'text-ink font-medium'
+                  : 'text-muted hover:text-ink'
               }`}
             >
               {item.label}
@@ -70,11 +88,6 @@ const Navbar = ({ activeSection, setActiveSection }) => {
       )}
     </header>
   )
-}
-
-Navbar.propTypes = {
-  activeSection: PropTypes.string.isRequired,
-  setActiveSection: PropTypes.func.isRequired,
 }
 
 export default Navbar
