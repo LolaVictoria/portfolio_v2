@@ -129,7 +129,7 @@ const Articles = ({ onOpenArticle }) => {
               <button
                 key={article.slug}
                 type="button"
-                onClick={() => onOpenArticle?.(article.slug)}
+                onClick={() => window.location.assign(article.link)}
                 className="group flex w-full items-start justify-between gap-5
                   py-7 -mx-2 px-2 rounded-md text-left
                   hover:bg-accent-soft/40 transition-colors"
