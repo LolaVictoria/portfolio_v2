@@ -8,7 +8,7 @@ export const articles = [
     date: 'Oct 2026',
     description:
       'How I approached job collection, filtering, deduplication, PostgreSQL storage and reliable email notifications.',
-    link: '/articles/building-a-reliable-job-alert-system',
+    link: 'https://damilola-oniyide.vercel.app/articles/building-a-reliable-job-alert-system/',
   },
 
   {
